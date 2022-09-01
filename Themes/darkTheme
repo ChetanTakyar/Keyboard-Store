@@ -1,0 +1,8 @@
+:root{
+    --primaryTextColour:
+    --secondaryTextColour:
+}
+
+h1 {
+    color:var(--primaryColour);
+}
