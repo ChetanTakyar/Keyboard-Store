@@ -11,6 +11,18 @@ import {
 } from "@mui/material";
 
 const theme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: () => ({
+          "&:hover": {
+            backgroundColor: colors.yellow[700],
+            transition: "0.2s",
+          },
+        }),
+      },
+    },
+  },
   palette: {
     background: {
       default: "#dfdfdf",
