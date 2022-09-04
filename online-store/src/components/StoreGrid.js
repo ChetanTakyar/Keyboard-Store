@@ -11,7 +11,7 @@ export default function SpacingGrid() {
       spacing={2}
     >
       <Grid2 item xs={12}>
-        <Grid2 container align = "center" rowSpacing={4} columnSpacing={{ xs: 2, sm: 4, md: 4 }}>
+        <Grid2 container rowSpacing={4} columnSpacing={{ xs: 2, sm: 4, md: 4 }}>
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((value) => (
             <Grid2 key={value} item>
               <Paper
