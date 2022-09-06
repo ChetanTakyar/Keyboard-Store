@@ -1,26 +1,32 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import { Typography } from "@mui/material";
+import { Card, Typography } from "@mui/material";
+import { borders } from '@mui/system';
+import '../App.css';
+
 
 export default function SpacingGrid() {
   return (
-    <Grid container flexGrow={"1"} display={"flex"} rowSpacing={4} columnSpacing={{ xs: 2, sm: 4, md: 4 }}>
-    {Array.from(Array(24)).map((_, index) => (
-      <Grid item  alignItems={"center"} key={index}>
-          <Paper
-            sx={{
-              height: 250,
-              width: 200,
-              p: 3,
-            }}>
-              
-            <Typography>This is an item I am totally selling</Typography>
-          </Paper>
-      </Grid>
-      
-    ))}
+    <div className= "Grid-Container">
     
-    </Grid>
+      <Grid container flexDirection="row" justifyContent={"flex-start"} display={"row"} spacing = {2} >
+      {Array.from(Array(24)).map((_, index) => (
+        <Grid item lg ={3} flexGrow={1} alignItems={"center"} key={index}> 
+            <Card
+              sx={{
+                height: 250,
+                p: 3,
+              }}>
+                
+              <Typography>This is an item I am totally selling</Typography>
+            </Card>
+        </Grid>
+        
+      ))}
+      
+      </Grid>
+    
+    </div>
   );
 }
