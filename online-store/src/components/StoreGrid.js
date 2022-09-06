@@ -1,8 +1,6 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import { Card, Typography } from "@mui/material";
-import { borders } from '@mui/system';
 import '../App.css';
 
 
@@ -10,13 +8,11 @@ export default function SpacingGrid() {
   return (
     <div className= "Grid-Container">
     
-      <Grid container flexDirection="row" justifyContent={"flex-start"} spacing = {2} >
+      <Grid container flexDirection="row" justifyContent={"flex-start"} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
       {Array.from(Array(22)).map((_, index) => (
-        <Grid item lg ={2} flexGrow={1} alignItems={"center"} key={index}> 
+        <Grid item xs={6} sm={3} md={2} flexGrow={1} alignItems={"center"} key={index}> 
             <Card
               sx={{
-                height: 250,
-                minWidth: 200,
                 p: 3,
               }}>
                 
