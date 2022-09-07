@@ -8,7 +8,7 @@ export default function SpacingGrid() {
   return (
     <div className= "Grid-Container">
     
-      <Grid container flexDirection="row" justifyContent={"flex-start"} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
+      <Grid container flexDirection="row" justifyContent={"flex-start"} spacing={{ xs: 2, md: 3 }}>
       {Array.from(Array(22)).map((_, index) => (
         <Grid item xs={6} sm={3} md={2} flexGrow={1} alignItems={"center"} key={index}> 
             <Card
