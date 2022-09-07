@@ -29,7 +29,7 @@ function App() {
       <CssBaseline />
       <div className="App">
         <Navbar />
-        <Box sx={{ m: 3 }}>
+        <Box sx={{ m: 3, justifyContent: "center" }}>
           <StoreGrid />
         </Box>
       </div>
