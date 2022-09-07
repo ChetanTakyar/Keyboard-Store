@@ -2,7 +2,8 @@ import { Component } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -10,16 +11,18 @@ class Navbar extends Component {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" style={{ background: "primary.main" }}>
           <Toolbar>
-            <Typography
-              variant="h5"
-              component="div"
-              color="primary.font"
-              sx={{ flexGrow: 1, ml: "17%", minWidth: "126px" }}
-            >
-              Keeb City
-            </Typography>
+            <Link to="/">
+              <Typography
+                variant="h5"
+                component="div"
+                color="primary.font"
+                sx={{ flexGrow: 1, ml: "17%", minWidth: "126px" }}
+              >
+                Keeb City
+              </Typography>
+            </Link>
             <Box xs={{ maxWidth: "366px" }}>
-              <Button>
+              <Link to="/group-buy">
                 <Typography
                   size="small"
                   variant="body2"
@@ -27,9 +30,9 @@ class Navbar extends Component {
                   sx={{ flexGrow: 1 }}
                 >
                   Group Buy
-                </Typography>{" "}
-              </Button>
-              <Button>
+                </Typography>
+              </Link>
+              <Link to="/in-stock">
                 <Typography
                   size="small"
                   variant="body2"
@@ -37,9 +40,9 @@ class Navbar extends Component {
                   sx={{ flexGrow: 1 }}
                 >
                   In Stock
-                </Typography>{" "}
-              </Button>
-              <Button>
+                </Typography>
+              </Link>
+              <Link to="/sale">
                 <Typography
                   size="small"
                   variant="body2"
@@ -47,9 +50,9 @@ class Navbar extends Component {
                   sx={{ flexGrow: 1 }}
                 >
                   Sale
-                </Typography>{" "}
-              </Button>
-              <Button>
+                </Typography>
+              </Link>
+              <Link to="/contact">
                 <Typography
                   size="small"
                   variant="body2"
@@ -57,8 +60,8 @@ class Navbar extends Component {
                   sx={{ flexGrow: 1 }}
                 >
                   Contact
-                </Typography>{" "}
-              </Button>
+                </Typography>
+              </Link>
             </Box>
           </Toolbar>
         </AppBar>
