@@ -10,7 +10,7 @@ export default function SpacingGrid() {
     
       <Grid container flexDirection="row" justifyContent={"flex-start"} spacing={{ xs: 2, md: 3 }}>
       {Array.from(Array(22)).map((_, index) => (
-        <Grid item xs={6} sm={3} md={2} flexGrow={1} alignItems={"center"} key={index}> 
+        <Grid item xs={6} sm={4} md={3} flexGrow={1} alignItems={"center"} key={index}> 
             <Card
               sx={{
                 p: 3,
