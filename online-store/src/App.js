@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createTheme, colors, ThemeProvider, CssBaseline } from "@mui/material";
-
+import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import GroupBuy from "./pages/GroupBuy";
