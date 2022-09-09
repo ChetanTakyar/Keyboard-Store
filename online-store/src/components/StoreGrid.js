@@ -17,7 +17,7 @@ export default function SpacingGrid() {
       <Grid container flexDirection="row" justifyContent={"flex-start"} spacing={{ xs: 1, md: 2 }}>
         {Array.from(Array(31)).map((_, index) => (
           <Grid item xs={6} sm={4} md={4} flexGrow={1} alignItems={"center"} key={index}>
-            <Card sx={{p: 3}}>
+            <Card sx={{p: 2}}>
             <CardHeader title="Top Tier Keeb"/>
               <CardContent>
                 <CardMedia
@@ -28,6 +28,9 @@ export default function SpacingGrid() {
                 />
                 <Typography sx={{ fontSize: 12 }}>
                   This is an item I am totally selling and it is very nice
+                </Typography>
+                <Typography justifySelf={"right"}>
+                  $50,000
                 </Typography>
               </CardContent>
 
