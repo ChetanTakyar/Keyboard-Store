@@ -3,6 +3,9 @@ import Grid from "@mui/material/Grid";
 import {Card, CardContent, Typography, CardActions, CardHeader, CardMedia} from "@mui/material";
 import '../App.css';
 import Button from "@mui/material/Button";
+import IconButton from '@mui/material/IconButton';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+
 
 
 
@@ -29,7 +32,11 @@ export default function SpacingGrid() {
               </CardContent>
 
               <CardActions>
-                <Button size="medium" fullWidth={true} variant="contained">
+                <IconButton aria-label="add to favorites">
+                  <FavoriteIcon />
+                </IconButton>
+                
+                <Button size="medium" fullWidth variant="contained">
                   Add to cart
                 </Button>
               </CardActions>
