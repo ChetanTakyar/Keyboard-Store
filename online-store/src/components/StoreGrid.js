@@ -6,11 +6,6 @@ import Button from "@mui/material/Button";
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-
-
-
-
-
 export default function SpacingGrid() {
   return (
     <div className= "Grid-Container">
