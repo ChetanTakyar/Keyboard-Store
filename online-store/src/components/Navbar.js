@@ -1,17 +1,39 @@
 import { Component } from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import { Typography } from "@mui/material";
+import {
+  Button,
+  Typography,
+  AppBar,
+  Box,
+  Toolbar
+} from "@mui/material";
 import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
     return (
-      <Box/>
-    )
+      <Box
+        sx={{
+          flexGrow: 1
+        }}>
+
+        <AppBar>
+          <Toolbar>
+            <Typography sx={{ flexGrow: 1 }}
+              variant="h6"
+              component="div"
+            >
+              Keeb City
+            </Typography>
+            <Button>Store</Button>
+            <Button>Accessories</Button>
+            <Button>Login</Button>
+          </Toolbar>
+        </AppBar>
+      </Box>
+    );
   }
-} 
+}
+
 
 
 export default Navbar;
