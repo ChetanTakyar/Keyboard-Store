@@ -1,27 +1,47 @@
 import { Component } from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import { Typography } from "@mui/material";
+import {
+  Button,
+  Typography,
+  AppBar,
+  Box,
+  Toolbar
+} from "@mui/material";
 
 class Navbar extends Component {
   render() {
     return (
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" style={{ background: "primary.main" }}>
+      <Box
+        sx={{
+          flexGrow: 1
+        }}>
+
+        <AppBar>
           <Toolbar>
-            <Typography
+            <Typography sx={{ flexGrow: 1 }}
               variant="h6"
-              component="div"
-              color="primary.font"
-              sx={{ flexGrow: 1 }}
-            >
+              component="div">
               Keeb City
             </Typography>
+            <Button
+              variant="text"
+              color="inherit">
+              Store
+            </Button>
+            <Button
+              variant="text"
+              color="inherit">
+              Accessories
+            </Button>
+            <Button
+              variant="text"
+              color="inherit">
+              Login
+            </Button>
           </Toolbar>
         </AppBar>
       </Box>
     );
   }
 }
+
 export default Navbar;
