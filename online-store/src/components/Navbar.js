@@ -6,7 +6,6 @@ import {
   Box,
   Toolbar
 } from "@mui/material";
-import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -20,20 +19,29 @@ class Navbar extends Component {
           <Toolbar>
             <Typography sx={{ flexGrow: 1 }}
               variant="h6"
-              component="div"
-            >
+              component="div">
               Keeb City
             </Typography>
-            <Button>Store</Button>
-            <Button>Accessories</Button>
-            <Button>Login</Button>
+            <Button
+              variant="text"
+              color="inherit">
+              Store
+            </Button>
+            <Button
+              variant="text"
+              color="inherit">
+              Accessories
+            </Button>
+            <Button
+              variant="text"
+              color="inherit">
+              Login
+            </Button>
           </Toolbar>
         </AppBar>
       </Box>
     );
   }
 }
-
-
 
 export default Navbar;
