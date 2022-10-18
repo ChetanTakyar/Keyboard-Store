@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import StoreGrid from "../components/StoreGrid";
 
-export default class Home extends Component {
+export default class Store extends Component {
   render() {
     return (
       <div>

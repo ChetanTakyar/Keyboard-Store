@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React, { Component } from "react";
 
-export default class Contacts extends Component {
+export default class ContactForm extends Component {
   render() {
     return (
       <Box>

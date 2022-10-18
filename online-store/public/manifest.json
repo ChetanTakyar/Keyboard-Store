@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Keeb City",
+  "name": "Keeb City: eCommerce platform to buy and sell keyboards.",
   "icons": [
     {
       "src": "favicon.ico",

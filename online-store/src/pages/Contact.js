@@ -6,7 +6,7 @@ import {
 
 import StoreGrid from "../components/StoreGrid";
 
-export default class Home extends Component {
+export default class Contact extends Component {
   render() {
     return (
       <div>

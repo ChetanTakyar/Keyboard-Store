@@ -8,7 +8,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export default function SpacingGrid() {
   return (
-    <div className= "Grid-Container">
+    <div className= "grid-container">
       <Grid container flexDirection="row" justifyContent={"flex-start"} spacing={{ xs: 1, md: 2 }}>
         {Array.from(Array(31)).map((_, index) => (
           <Grid item xs={6} sm={4} md={4} flexGrow={1} alignItems={"center"} key={index}>
