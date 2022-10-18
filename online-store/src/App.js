@@ -7,9 +7,12 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 
 // Pages
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import GroupBuy from "./pages/GroupBuy";
+import {
+  Contact,
+  GroupBuy,
+  Home,
+  Store
+} from "./pages"
 
 class App extends Component {
   render() {
@@ -19,8 +22,9 @@ class App extends Component {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/store" element={<Store />} />
             <Route path="/group-buy" element={<GroupBuy />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </Router>
