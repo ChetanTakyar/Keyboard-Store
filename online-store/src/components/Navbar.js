@@ -9,7 +9,7 @@ class Navbar extends Component {
           flexGrow: 1,
         }}
       >
-        <AppBar>
+        <AppBar position="static">
           <Toolbar>
             <Link to="/">
               <Typography
