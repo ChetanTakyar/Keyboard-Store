@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
+// Components
 import Navbar from "./components/Navbar";
-//Pages
+
+// Pages
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import GroupBuy from "./pages/GroupBuy";

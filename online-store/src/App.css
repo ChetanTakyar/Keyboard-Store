@@ -1,3 +1,7 @@
-.Grid-Container{
+.Grid-Container {
   padding: 0 20%;
+}
+
+.home-content p {
+  text-align: center;
 }
