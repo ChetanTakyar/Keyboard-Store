@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import GroupBuy from "./pages/GroupBuy";
 
+
 class App extends Component {
   render() {
     return (
@@ -22,8 +23,11 @@ class App extends Component {
           </Routes>
         </div>
       </Router>
+
+      
     );
   }
 }
 
 export default App;
+
