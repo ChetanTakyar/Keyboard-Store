@@ -35,16 +35,11 @@ class Navbar extends Component {
             <Button variant="text" color="inherit" href="/login">
               Login
             </Button>
-
-            <Button variant="text" color="inherit" onClick={BasicModal}>
-              Favourites
-              
-            </Button>
-          
+            <BasicModal/>
           </Toolbar>
         </AppBar>
+        
       </Box>
-
     );
   }
  
