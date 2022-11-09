@@ -1,6 +1,8 @@
 import { Component } from "react";
 import { Button, Typography, AppBar, Box, Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
+import BasicModal from "./Modal.js";
+
 export default class Navbar extends Component {
   render() {
     return (
@@ -33,8 +35,10 @@ export default class Navbar extends Component {
             <Button variant="text" color="inherit" href="/login">
               Login
             </Button>
+            <BasicModal/>
           </Toolbar>
         </AppBar>
+        
       </Box>
     );
   }

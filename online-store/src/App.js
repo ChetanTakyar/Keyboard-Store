@@ -14,6 +14,7 @@ import {
   Store
 } from "./pages"
 
+
 class App extends Component {
   render() {
     return (
@@ -28,6 +29,8 @@ class App extends Component {
           </Routes>
         </div>
       </Router>
+
+      
     );
   }
 }
