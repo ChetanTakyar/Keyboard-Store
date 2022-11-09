@@ -3,11 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
+// Components
 import Navbar from "./components/Navbar";
-//Pages
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import GroupBuy from "./pages/GroupBuy";
+
+// Pages
+import {
+  Contact,
+  GroupBuy,
+  Home,
+  Store
+} from "./pages"
 
 
 class App extends Component {
@@ -18,8 +23,9 @@ class App extends Component {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/store" element={<Store />} />
             <Route path="/group-buy" element={<GroupBuy />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </Router>
@@ -30,4 +36,3 @@ class App extends Component {
 }
 
 export default App;
-

@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 
-import { 
+import {
   Typography
 } from "@mui/material";
 
 import StoreGrid from "../components/StoreGrid";
 
-export default class GroupBuy extends Component {
+export default class Store extends Component {
   render() {
     return (
       <div>
         <Typography 
           variant="h3"
           component="div">
-          Group Buy
+          Store
         </Typography>
         <StoreGrid />
       </div>

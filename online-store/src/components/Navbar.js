@@ -3,7 +3,7 @@ import { Button, Typography, AppBar, Box, Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
 import BasicModal from "./Modal.js";
 
-class Navbar extends Component {
+export default class Navbar extends Component {
   render() {
     return (
       <Box
@@ -11,7 +11,7 @@ class Navbar extends Component {
           flexGrow: 1,
         }}
       >
-        <AppBar>
+        <AppBar position="static">
           <Toolbar>
             <Link to="/">
               <Typography
@@ -42,8 +42,4 @@ class Navbar extends Component {
       </Box>
     );
   }
- 
 }
-
-
-export default Navbar;
