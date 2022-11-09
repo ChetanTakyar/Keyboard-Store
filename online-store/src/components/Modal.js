@@ -1,5 +1,8 @@
 import React from "react";
 import { Button, Typography, Box, Modal } from "@mui/material";
+import {Card, CardContent, CardActions, CardHeader, CardMedia} from "@mui/material";
+import IconButton from '@mui/material/IconButton';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const style = {
   position: 'absolute',
@@ -25,7 +28,7 @@ export default function BasicModal() {
           variant="text"
           color="inherit"
           onClick={handleOpen}>
-            Open modal
+            Favourites
         </Button>
         <Modal
           open={open}
@@ -35,11 +38,35 @@ export default function BasicModal() {
         >
           <Box sx={style}>
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              Text in a modal
+              Favourites
             </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-             Hi
-            </Typography>
+            <Card sx={{p: 2}}>
+            <CardHeader title="Top Tier Keeb"/>
+              <CardContent>
+                <CardMedia
+                  component="img"
+                  height="194"
+                  image="https://m.media-amazon.com/images/I/61GnUc9e7VL._AC_SL1500_.jpg"
+                  alt="Keyboard"
+                />
+                <Typography sx={{ fontSize: 12 }}>
+                  This is an item I am totally selling and it is very nice
+                </Typography>
+                <Typography justifySelf={"right"}>
+                  $50,000
+                </Typography>
+              </CardContent>
+
+              <CardActions>
+                <IconButton aria-label="add to favorites">
+                  <FavoriteIcon />
+                </IconButton>
+                
+                <Button size="medium" fullWidth variant="contained">
+                  Add to cart
+                </Button>
+              </CardActions>
+            </Card>
           </Box>
         </Modal>
       </div>
