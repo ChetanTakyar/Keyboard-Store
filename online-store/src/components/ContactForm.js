@@ -6,9 +6,7 @@ export default class ContactForm extends Component {
     return (
       <Box>
         <h1>Contact Us!</h1>
-        <p>
-          Got any general enquiries or wanting to know when we restock an item?{" "}
-        </p>
+        <p>Got any general enquiries or wanting to know when we restock an item? </p>
         <p>Let us know in the form below! </p>
       </Box>
     );

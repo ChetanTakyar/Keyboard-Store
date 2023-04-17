@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import React, { Component } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import './App.css';
+import "./App.css";
 
 // Components
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 
 // Pages
-import { Contact, GroupBuy, Home, Login, Store } from './pages';
+import { Contact, GroupBuy, Home, Login, Store } from "./pages";
 
 class App extends Component {
   render() {

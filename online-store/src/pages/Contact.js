@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 
-import {
-  Typography
-} from '@mui/material';
+import { Typography } from "@mui/material";
 
 import StoreGrid from "../components/StoreGrid";
 

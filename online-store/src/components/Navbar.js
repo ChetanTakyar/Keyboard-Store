@@ -1,5 +1,5 @@
+import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 import { Component } from "react";
-import { Button, Typography, AppBar, Box, Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
 import BasicModal from "./Modal.js";
 
@@ -9,8 +9,7 @@ export default class Navbar extends Component {
       <Box
         sx={{
           flexGrow: 1,
-        }}
-      >
+        }}>
         <AppBar position="static">
           <Toolbar>
             <Link to="/">
@@ -18,27 +17,37 @@ export default class Navbar extends Component {
                 sx={{ flexGrow: 1 }}
                 variant="h6"
                 component="div"
-                href="/"
-              >
+                href="/">
                 Keeb City
               </Typography>
             </Link>
-            <Button variant="text" color="inherit" href="/store">
+            <Button
+              variant="text"
+              color="inherit"
+              href="/store">
               Store
             </Button>
-            <Button variant="text" color="inherit" href="/group-buy">
+            <Button
+              variant="text"
+              color="inherit"
+              href="/group-buy">
               Group Buy
             </Button>
-            <Button variant="text" color="inherit" href="/contact">
+            <Button
+              variant="text"
+              color="inherit"
+              href="/contact">
               Contact
             </Button>
-            <Button variant="text" color="inherit" href="/login">
+            <Button
+              variant="text"
+              color="inherit"
+              href="/login">
               Login
             </Button>
-            <BasicModal/>
+            <BasicModal />
           </Toolbar>
         </AppBar>
-        
       </Box>
     );
   }
