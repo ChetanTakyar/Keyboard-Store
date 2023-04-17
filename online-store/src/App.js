@@ -1,19 +1,13 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { Component } from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
-import "./App.css";
+import './App.css';
 
 // Components
-import Navbar from "./components/Navbar";
+import Navbar from './components/Navbar';
 
 // Pages
-import {
-  Contact,
-  GroupBuy,
-  Home,
-  Store
-} from "./pages"
-
+import { Contact, GroupBuy, Home, Login, Store } from './pages';
 
 class App extends Component {
   render() {
@@ -22,15 +16,29 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/store" element={<Store />} />
-            <Route path="/group-buy" element={<GroupBuy />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/"
+              element={<Home />}
+            />
+            <Route
+              path="/store"
+              element={<Store />}
+            />
+            <Route
+              path="/group-buy"
+              element={<GroupBuy />}
+            />
+            <Route
+              path="/contact"
+              element={<Contact />}
+            />
+            <Route
+              path="/login"
+              element={<Login />}
+            />
           </Routes>
         </div>
       </Router>
-
-      
     );
   }
 }
