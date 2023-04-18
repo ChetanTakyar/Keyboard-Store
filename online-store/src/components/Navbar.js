@@ -1,3 +1,5 @@
+import { mdiCartHeart } from "@mdi/js";
+import Icon from "@mdi/react";
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
@@ -43,6 +45,13 @@ export default class Navbar extends Component {
               color="inherit"
               href="/login">
               Login
+            </Button>
+            <Button href="/favorites">
+              <Icon
+                path={mdiCartHeart}
+                size={1}
+                color="inherit"
+              />
             </Button>
           </Toolbar>
         </AppBar>
