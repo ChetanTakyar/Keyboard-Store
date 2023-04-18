@@ -45,7 +45,6 @@ export default class Navbar extends Component {
               href="/login">
               Login
             </Button>
-            <BasicModal />
           </Toolbar>
         </AppBar>
       </Box>
