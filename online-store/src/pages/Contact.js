@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { Typography } from "@mui/material";
 
-import StoreGrid from "../components/StoreGrid";
+import ContactForm from "../components/ContactForm";
 
 export default class Contact extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class Contact extends Component {
           component="div">
           Contact
         </Typography>
-        <StoreGrid />
+        <ContactForm />
       </div>
     );
   }
