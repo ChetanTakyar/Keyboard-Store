@@ -1,5 +1,6 @@
 import { mdiAccount } from "@mdi/js";
 import Icon from "@mdi/react";
+import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
@@ -12,15 +13,15 @@ export default class Navbar extends Component {
         }}>
         <AppBar position="static">
           <Toolbar>
-            <Link to="/">
-              <Typography
-                sx={{ flexGrow: 1 }}
-                variant="h6"
-                component="div"
-                href="/">
+            <Button
+              variant="text"
+              color="inherit">
+              <Link
+                to="/"
+                style={{ color: "inherit", textDecoration: "inherit" }}>
                 Keeb City
-              </Typography>
-            </Link>
+              </Link>
+            </Button>
             <Button
               variant="text"
               color="inherit"
