@@ -46,7 +46,7 @@ export default class Navbar extends Component {
               href="/login">
               Login
             </Button>
-            <Button href="/favorites">
+            <Button href="/favourites">
               <Icon
                 path={mdiCartHeart}
                 size={1}
