@@ -1,4 +1,4 @@
-import { Grid, TextField } from "@mui/material";
+import { Grid, TextField, Typography } from "@mui/material";
 import React, { Component } from "react";
 
 export default class Login extends Component {
@@ -12,13 +12,25 @@ export default class Login extends Component {
           alignItems="center"
           justifyContent="center"
           style={{ minHeight: "100vh" }}>
+          <Typography
+            variant="h3"
+            component="div">
+            Login Screen
+          </Typography>
+          <Typography
+            variant="p"
+            component="div">
+            Enter your account details here to login.
+          </Typography>
           <TextField
             id="email-login"
             label="Email"
+            margin="normal"
             variant="outlined"></TextField>
           <TextField
             id="password-login"
             label="Password"
+            margin="normal"
             variant="outlined"></TextField>
         </Grid>
       </div>
