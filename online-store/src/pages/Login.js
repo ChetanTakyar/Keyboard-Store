@@ -1,10 +1,10 @@
-import { Button, Grid, TextField, Typography } from "@mui/material";
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import React, { Component } from "react";
 
 export default class Login extends Component {
   render() {
     return (
-      <div>
+      <Box>
         <Grid
           container
           spacing={0}
@@ -41,7 +41,7 @@ export default class Login extends Component {
             Register
           </Button>
         </Grid>
-      </div>
+      </Box>
     );
   }
 }
