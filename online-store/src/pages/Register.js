@@ -56,7 +56,9 @@ export default class Register extends Component {
             margin="normal"
             variant="outlined"
           />
-          <Button variant="contained">
+          <Button
+            variant="contained"
+            style={{ margin: "10px 0" }}>
             <Link
               to="/login"
               onClick={this.onSubmit}
@@ -64,7 +66,11 @@ export default class Register extends Component {
               Submit
             </Link>
           </Button>
-          <Button variant="contained">Login</Button>
+          <Button
+            variant="contained"
+            style={{ margin: "5px 0" }}>
+            Login
+          </Button>
         </Grid>
       </div>
     );

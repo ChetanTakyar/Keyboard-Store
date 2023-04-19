@@ -36,8 +36,8 @@ export default class Login extends Component {
           />
           <Button
             variant="contained"
-            margin="normal"
-            href="/register">
+            href="/register"
+            style={{ margin: "10px 0" }}>
             Register
           </Button>
         </Grid>
