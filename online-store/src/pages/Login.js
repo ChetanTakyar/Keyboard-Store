@@ -1,4 +1,4 @@
-import { Grid, TextField, Typography } from "@mui/material";
+import { Button, Grid, TextField, Typography } from "@mui/material";
 import React, { Component } from "react";
 
 export default class Login extends Component {
@@ -26,12 +26,19 @@ export default class Login extends Component {
             id="email-login"
             label="Email"
             margin="normal"
-            variant="outlined"></TextField>
+            variant="outlined"
+          />
           <TextField
             id="password-login"
             label="Password"
             margin="normal"
-            variant="outlined"></TextField>
+            variant="outlined"
+          />
+          <Button
+            variant="contained"
+            margin="normal">
+            Register
+          </Button>
         </Grid>
       </div>
     );
