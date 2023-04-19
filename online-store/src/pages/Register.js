@@ -1,7 +1,12 @@
-import { Grid, TextField, Typography } from "@mui/material";
+import { Button, Grid, TextField, Typography } from "@mui/material";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Register extends Component {
+  onSubmit = () => {
+    alert("Submitted!");
+  };
+
   render() {
     return (
       <div>
@@ -51,6 +56,14 @@ export default class Register extends Component {
             margin="normal"
             variant="outlined"
           />
+          <Button variant="contained">
+            <Link
+              to="/login"
+              onClick={this.onSubmit}
+              style={{ color: "inherit", textDecoration: "inherit" }}>
+              Submit
+            </Link>
+          </Button>
         </Grid>
       </div>
     );
