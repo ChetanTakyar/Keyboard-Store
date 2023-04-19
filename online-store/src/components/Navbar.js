@@ -1,4 +1,5 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { mdiAccount } from "@mdi/js";
+import Icon from "@mdi/react";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
@@ -42,7 +43,11 @@ export default class Navbar extends Component {
               variant="text"
               color="inherit"
               href="/login">
-              Login
+              <Icon
+                path={mdiAccount}
+                size={1}
+                color="inherit"
+              />
             </Button>
           </Toolbar>
         </AppBar>
