@@ -1,7 +1,7 @@
 import { Box, Button } from "@mui/material";
 import React from "react";
 
-export default function FavouritesList() {
+export default function FavouritesItem() {
   return (
     <Box flexGrow={1}>
       <Box
