@@ -1,4 +1,4 @@
-import { Button, Grid, TextField, Typography } from "@mui/material";
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ export default class Register extends Component {
 
   render() {
     return (
-      <div>
+      <Box>
         <Grid
           container
           spacing={0}
@@ -56,23 +56,28 @@ export default class Register extends Component {
             margin="normal"
             variant="outlined"
           />
-          <Button
-            variant="contained"
+          <Box
+            display="inline-flex"
             style={{ margin: "10px 0" }}>
-            <Link
-              to="/login"
-              onClick={this.onSubmit}
-              style={{ color: "inherit", textDecoration: "inherit" }}>
-              Submit
-            </Link>
-          </Button>
-          <Button
-            variant="contained"
-            style={{ margin: "5px 0" }}>
-            Login
-          </Button>
+            <Button
+              variant="contained"
+              style={{ margin: "0 10px" }}>
+              <Link
+                to="/login"
+                onClick={this.onSubmit}
+                style={{ color: "inherit", textDecoration: "inherit" }}>
+                Submit
+              </Link>
+            </Button>
+            <Button
+              variant="contained"
+              href="/login"
+              style={{ margin: "0 10px" }}>
+              Return to Login
+            </Button>
+          </Box>
         </Grid>
-      </div>
+      </Box>
     );
   }
 }
