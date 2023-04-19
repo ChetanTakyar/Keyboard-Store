@@ -36,7 +36,8 @@ export default class Login extends Component {
           />
           <Button
             variant="contained"
-            margin="normal">
+            margin="normal"
+            href="/register">
             Register
           </Button>
         </Grid>
