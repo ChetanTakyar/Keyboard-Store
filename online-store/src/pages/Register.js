@@ -64,6 +64,7 @@ export default class Register extends Component {
               Submit
             </Link>
           </Button>
+          <Button variant="contained">Login</Button>
         </Grid>
       </div>
     );
