@@ -1,8 +1,16 @@
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import { Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import IconButton from "@mui/material/IconButton";
+import {
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
+  CardMedia,
+  Grid,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import * as React from "react";
 import "../App.css";
 
