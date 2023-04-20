@@ -1,7 +1,11 @@
-import { Box, Grid, TextField, Typography } from "@mui/material";
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import React, { Component } from "react";
 
 export default class ContactForm extends Component {
+  onSubmit = () => {
+    alert("Submitted!");
+  };
+
   render() {
     return (
       <Box>
@@ -39,6 +43,12 @@ export default class ContactForm extends Component {
             margin="normal"
             variant="outlined"
           />
+          <Button
+            variant="contained"
+            onClick={this.onSubmit}
+            style={{ margin: "10px 0" }}>
+            Submit
+          </Button>
         </Grid>
       </Box>
     );
