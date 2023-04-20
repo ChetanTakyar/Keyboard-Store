@@ -5,7 +5,15 @@ import FavouritesItem from "../components/FavouritesItem";
 export default class Favourites extends Component {
   render() {
     return (
-      <Box>
+      <Box
+        display={"flex"}
+        flexDirection="column"
+        justifyContent={"center"}
+        alignItems={"center"}>
+        <FavouritesItem />
+        <FavouritesItem />
+        <FavouritesItem />
+        <FavouritesItem />
         <FavouritesItem />
       </Box>
     );
