@@ -7,7 +7,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 
 // Pages
-import { Contact, Favourites, GroupBuy, Home, Login, Store } from "./pages";
+import { Contact, Favourites, GroupBuy, Home, Login, Register, Store } from "./pages";
 
 class App extends Component {
   render() {
@@ -35,6 +35,10 @@ class App extends Component {
             <Route
               path="/login"
               element={<Login />}
+            />
+            <Route
+              path="/register"
+              element={<Register />}
             />
             <Route
               path="/favourites"
