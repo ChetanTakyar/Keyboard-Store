@@ -5,3 +5,7 @@
 .home-content p {
   text-align: center;
 }
+
+#favourites-image {
+  padding: 0 10px;
+}
