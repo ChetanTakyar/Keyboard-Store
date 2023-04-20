@@ -1,41 +1,57 @@
-import { Component } from "react";
-import {
-  Button,
-  Typography,
-  AppBar,
-  Box,
-  Toolbar
-} from "@mui/material";
+import { mdiCartHeart } from "@mdi/js";
+import Icon from "@mdi/react";
+import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-class Navbar extends Component {
+export default class Navbar extends Component {
   render() {
     return (
       <Box
         sx={{
-          flexGrow: 1
+          flexGrow: 1,
         }}>
-
-        <AppBar>
+        <AppBar position="static">
           <Toolbar>
-            <Typography sx={{ flexGrow: 1 }}
-              variant="h6"
-              component="div">
-              Keeb City
-            </Typography>
+            <Link to="/">
+              <Typography
+                sx={{ flexGrow: 1 }}
+                variant="h6"
+                component="div"
+                href="/">
+                Keeb City
+              </Typography>
+            </Link>
             <Button
               variant="text"
-              color="inherit">
+              color="inherit"
+              href="/store">
               Store
             </Button>
             <Button
               variant="text"
-              color="inherit">
-              Accessories
+              color="inherit"
+              href="/group-buy">
+              Group Buy
             </Button>
             <Button
               variant="text"
-              color="inherit">
+              color="inherit"
+              href="/contact">
+              Contact
+            </Button>
+            <Button
+              variant="text"
+              color="inherit"
+              href="/login">
               Login
+            </Button>
+            <Button href="/favourites">
+              <Icon
+                path={mdiCartHeart}
+                size={1}
+                color="inherit"
+              />
             </Button>
           </Toolbar>
         </AppBar>
@@ -43,5 +59,3 @@ class Navbar extends Component {
     );
   }
 }
-
-export default Navbar;

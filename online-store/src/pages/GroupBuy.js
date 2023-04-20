@@ -1,12 +1,18 @@
-import { Typography } from "@mui/material";
 import React, { Component } from "react";
+
+import { Typography } from "@mui/material";
+
 import StoreGrid from "../components/StoreGrid";
 
-export default class Home extends Component {
+export default class GroupBuy extends Component {
   render() {
     return (
       <div>
-        <Typography xs={{ alignContent: "center" }}> Group Buy </Typography>
+        <Typography
+          variant="h3"
+          component="div">
+          Group Buy
+        </Typography>
         <StoreGrid />
       </div>
     );

@@ -1,3 +1,11 @@
-.Grid-Container{
+.grid-container {
   padding: 0 20%;
+}
+
+.home-content p {
+  text-align: center;
+}
+
+#favourites-image {
+  padding: 0 10px;
 }

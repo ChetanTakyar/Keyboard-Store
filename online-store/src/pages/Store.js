@@ -2,18 +2,18 @@ import React, { Component } from "react";
 
 import { Typography } from "@mui/material";
 
-import ContactForm from "../components/ContactForm";
+import StoreGrid from "../components/StoreGrid";
 
-export default class Contact extends Component {
+export default class Store extends Component {
   render() {
     return (
       <div>
         <Typography
           variant="h3"
           component="div">
-          Contact
+          Store
         </Typography>
-        <ContactForm />
+        <StoreGrid />
       </div>
     );
   }
