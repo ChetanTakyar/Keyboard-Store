@@ -48,15 +48,15 @@ export default function SpacingGrid() {
               <Typography>$50,000</Typography>
             </CardContent>
             <CardActions>
-              <IconButton aria-label="add to favorites">
-                <FavoriteIcon />
-              </IconButton>
               <Button
                 size="medium"
                 fullWidth
                 variant="contained">
                 Add to cart
               </Button>
+              <IconButton aria-label="add to favorites">
+                <FavoriteIcon />
+              </IconButton>
             </CardActions>
           </Card>
         </Grid>
