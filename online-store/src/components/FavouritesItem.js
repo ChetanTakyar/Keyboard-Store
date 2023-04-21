@@ -1,7 +1,8 @@
-import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 
-export default function FavouritesItem() {
+import { Box, Button, Typography } from "@mui/material";
+
+const FavouritesItem = () => {
   return (
     <Box
       display={"inline-flex"}
@@ -45,4 +46,6 @@ export default function FavouritesItem() {
       </Box>
     </Box>
   );
-}
+};
+
+export default FavouritesItem;

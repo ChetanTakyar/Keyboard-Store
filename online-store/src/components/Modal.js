@@ -1,4 +1,8 @@
+import React from "react";
+
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import IconButton from "@mui/material/IconButton";
+
 import {
   Box,
   Button,
@@ -10,8 +14,6 @@ import {
   Modal,
   Typography,
 } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
-import React from "react";
 
 const style = {
   position: "absolute",
@@ -25,7 +27,7 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal() {
+const BasicModal = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -82,4 +84,6 @@ export default function BasicModal() {
       </Modal>
     </div>
   );
-}
+};
+
+export default BasicModal;
