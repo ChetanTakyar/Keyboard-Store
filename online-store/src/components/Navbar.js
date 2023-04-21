@@ -1,10 +1,10 @@
+import React from "react";
+
 import { mdiAccount, mdiCartHeart } from "@mdi/js";
 import Icon from "@mdi/react";
 
 import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
-
-import React from "react";
 
 const Navbar = () => {
   return (

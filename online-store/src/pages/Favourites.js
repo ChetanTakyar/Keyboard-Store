@@ -1,5 +1,7 @@
-import { Box } from "@mui/material";
 import React from "react";
+
+import { Box } from "@mui/material";
+
 import FavouritesItem from "../components/FavouritesItem";
 
 const Favourites = () => {

@@ -1,3 +1,5 @@
+import * as React from "react";
+
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import {
   Button,
@@ -10,7 +12,6 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
-import * as React from "react";
 
 const SpacingGrid = () => {
   return (

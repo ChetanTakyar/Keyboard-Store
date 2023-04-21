@@ -1,5 +1,6 @@
-import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
+
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Register = () => {

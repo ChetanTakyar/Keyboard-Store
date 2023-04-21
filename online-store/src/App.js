@@ -1,13 +1,13 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import "./App.css";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 // Components
 import Navbar from "./components/Navbar";
 
 // Pages
 import { Contact, Favourites, GroupBuy, Home, Login, Register, Store } from "./pages";
+import "./App.css";
 
 const App = () => {
   return (
