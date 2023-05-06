@@ -1,13 +1,16 @@
+import { Box } from "@mui/material";
 import React from "react";
+import Carousel from "../components/Carousel";
 
 import "../App.css";
 
 const Home = () => {
   return (
-    <div id="home-content">
+    <Box id="home-content">
       <h1>Keeb City</h1>
       <p>Welcome to our keyboard store</p>
-    </div>
+      <Carousel></Carousel>
+    </Box>
   );
 };
 
