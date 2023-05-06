@@ -1,16 +1,19 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import CarouselItem from "../components/CarosuelItem";
+import CarosuelItemData from "./CarosuelItemData.json";
 
-function Example(props) {
+function Carosuel() {
   return (
     <Carousel>
-      {items.map((item, i) => (
-        <Item
-          key={i}
+      {CarosuelItemData.map((item) => (
+        <CarouselItem
+          key={item.id}
           item={item}
         />
       ))}
     </Carousel>
   );
 }
+
+export default Carosuel;
