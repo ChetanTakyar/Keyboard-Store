@@ -1,12 +1,15 @@
-import { Button, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
+import React from "react";
 
-function Item(props) {
+function CarosuelItem(item) {
   return (
     <Paper>
-      <h2>{props.item.name}</h2>
-      <p>{props.item.description}</p>
-
-      <Button className="CheckButton">Check it out!</Button>
+      <img
+        src={item.image}
+        alt={item.title}
+      />
+      <h2>{item.title}</h2>
     </Paper>
   );
 }
+export default CarosuelItem;
