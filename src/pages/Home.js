@@ -9,7 +9,7 @@ const Home = () => {
     <Box id="home-content">
       <h1>Keeb City</h1>
       <p>Welcome to our keyboard store</p>
-      <Carousel></Carousel>
+      <Carousel />
     </Box>
   );
 };
