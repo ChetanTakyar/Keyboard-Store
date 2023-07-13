@@ -1,27 +1,14 @@
 import React from "react";
-
-import { Box, Grid, Typography } from "@mui/material";
-
 import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <Box>
-      <Grid
-        container
-        spacing={0}
-        direction="column"
-        alignItems="center"
-        justifyContent="center"
-        style={{ minHeight: "100vh" }}>
-        <Typography
-          variant="h3"
-          component="div">
-          Contact
-        </Typography>
-        <ContactForm />
-      </Grid>
-    </Box>
+    <div className="contactPage">
+      <h3>Contact</h3>
+      <p>Got any general enquiries or wanting to know when we restock an item?</p>
+      <p>Let us know in the form below!</p>
+      <ContactForm />
+    </div>
   );
 };
 
