@@ -8,32 +8,39 @@ const ContactForm = () => {
   return (
     <div className="contactForm">
       <form>
-        <label htmlFor="name">Name</label>
+        <div>
+          <label htmlFor="name">Name</label>
+        </div>
+
         <input
           type="text"
           id="name"
           name="name"
         />
+        <div>
+          <label htmlFor="email-contact">Email</label>
+        </div>
 
-        <label htmlFor="email-contact">Email</label>
         <input
           type="text"
           id="email"
           name="email"
         />
+        <div>
+          <label htmlFor="message-contact">Message</label>
+        </div>
 
-        <label htmlFor="message-contact">Message</label>
         <input
           type="text"
           id="message-contact"
           name="message"
         />
-
-        <input
-          type="submit"
-          value="Submit"
-          onClick={onSubmit}
-        />
+        <div>
+          <input
+            type="submit"
+            onClick={onSubmit}
+          />
+        </div>
       </form>
     </div>
   );
